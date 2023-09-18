@@ -1,0 +1,22 @@
+{
+    "name": "big-fish-calendar",
+    "version": "1.0.0",
+    "description": "Generates Fantastical event strings when provided uptime data",
+    "main": "main.js",
+    "scripts": {
+        "clean": "rm -rf dist/",
+        "build": "tsc",
+        "prebuild": "npm run clean",
+        "start": "node ./dist/main.js",
+        "prestart": "npm run build"
+    },
+    "keywords": [
+        "Big Fish"
+    ],
+    "author": "Fish Person",
+    "license": "MIT License",
+    "devDependencies": {
+        "@types/node": "^20.6.2",
+        "typescript": "^5.2.2"
+    }
+}
